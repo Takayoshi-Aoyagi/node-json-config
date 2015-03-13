@@ -1,6 +1,6 @@
 {
   "name": "node-json-config",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Read and Write configurations to JSON file.",
   "main": "./lib/config.js",
   "scripts": {
