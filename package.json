@@ -1,0 +1,26 @@
+{
+  "name": "node-json-config",
+  "version": "0.0.1",
+  "description": "Read and Write configurations to JSON file.",
+  "main": "./lib/config.js",
+  "scripts": {
+    "test": "cd test; mocha"
+  },
+  "author": "Takayoshi Aoyagi",
+  "license": "MIT",
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Takayoshi-Aoyagi/node-json-config.git"
+  },
+  "keywords": [
+    "configurations",
+    "JSON"
+  ],
+  "bugs": {
+    "url": "https://github.com/Takayoshi-Aoyagi/node-json-config/issues"
+  },
+  "homepage": "https://github.com/Takayoshi-Aoyagi/node-json-config"
+}
