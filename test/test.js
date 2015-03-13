@@ -1,4 +1,5 @@
-var assert = require("assert");
+var assert = require('assert');
+var fs = require('fs');
 var Config = require('../lib/config');
 
 var debug = false;
@@ -13,6 +14,7 @@ describe('Config', function () {
 
     var path = "./config.json";
     var conf = new Config(path);
+    var nojson = "./no.json";
     
     describe('#get()', function () {
 	it('foo => bar', function () {
@@ -56,6 +58,13 @@ describe('Config', function () {
 	   log("--------");
 	   log(conf.toString());
 	});
+    });
 
-    });    
+    describe('No config file exists.', function () {
+	var config = new Config(nojson);
+    });
+
+    after(function () {
+	fs.unlink(nojson);
+    });
 });
